@@ -1,0 +1,64 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+@keyframes changecolors {
+	0% {
+		background-color: #FFF07C;
+	}
+	20% {
+		background-color: #80FF72;
+	}
+	40% {
+		background-color: #7EE8FA;
+	}
+	60% {
+		background-color: #EEC0C6;
+	}
+	80% {
+		background-color: #E58C8A;
+	}
+	100% {
+		background-color: #FFF07C;
+	}
+}
+
+@keyframes changecolorstext {
+	0% {
+		color: #D8CB6A;
+	}
+	20% {
+		color: #6DD861;
+	}
+	40% {
+		color: #69C3D3;
+	}
+	60% {
+		color: #C6A1A6;
+	}
+	80% {
+		color: #BF7472;
+	}
+	100% {
+		color: #D8CB6A;
+	}
+}
+
+.back {
+	width: 100%;
+	height: 100%;
+	animation: changecolors 10s infinite 0s forwards;
+	display: flex;
+	justify-content: center;
+	opacity: 0.5;
+}
+
+.text {
+	color: #303030;
+	font-family: montserrat;
+	font-size: 80px;
+	align-self: center;
+	animation: changecolorstext 5s infinite 0s alternate;
+	text-shadow: 5px 5px 0px rgba(255, 255, 255, 1);
+}
